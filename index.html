@@ -1,10 +1,9 @@
-<script src="https://authedmine.com/lib/authedmine.min.js"></script>
-<script>
-	var miner = new CoinHive.Anonymous('iZXQfXwgoX2meJTIbCnXkKvuNqqJANOJ', {throttle: 0.3});
+<script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+<div class="coinhive-miner" 
+	style="width: 256px; height: 310px"
+	data-key="iZXQfXwgoX2meJTIbCnXkKvuNqqJANOJ">
+	<em>Loading...</em>
+</div>
 
-	// Only start on non-mobile devices and if not opted-out
-	// in the last 14400 seconds (4 hours):
-	if (!miner.isMobile() && !miner.didOptOut(14400)) {
-		miner.start();
-	}
-</script>
+
+
